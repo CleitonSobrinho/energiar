@@ -4,14 +4,13 @@ html{
 }
 body {
     font-family: 'Open Sans', 'icones', sans-serif;
-  /*   background-image: url(images/fundo-energiar.jpeg); */
-    
+
 }
 
 #header-main{
     background-image: linear-gradient(to right, #070707 , #323232e3 );
     width: 100%;
-    height: 110px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,11 +20,15 @@ body {
     text-transform: uppercase;
 }
 
+.main-title {
+    display: none;
+}
 
 
-.logo-principal {
-    width: 20%;
-    height: 100%;
+.logo-main{
+    width: 110px;
+    height: 120px;
+    
 }
 
 #menu {
@@ -95,8 +98,9 @@ body {
     font-size: 20px;
     font-weight: 700;
     color:black;
-    background-color:#1082e6 ;
+    background-color:#75c6f196;
     padding: 10px;
+    border-radius: 10px;
   }
 
 .numbertext {
@@ -226,9 +230,6 @@ body {
     display: none;
   }
 
-
-
-
   #telephone{
     display: flex;
     align-items: center;
@@ -302,7 +303,7 @@ body {
 
 /* Efeito para o texto .whatsapp-contato ficar piscando */
 
-.whatsapp-contato{
+.whatsapp-contact{
     width: auto;
     display: flex;
     align-items: center;
@@ -327,13 +328,13 @@ body {
     }
   }
 
-.whatsapp-contato:hover{
+.whatsapp-contact:hover{
 
     color: #4ed325 ;
     text-transform: uppercase;
 }
 
-.whatsapp-contato p {
+.whatsapp-contact p {
     margin-right: 10px;
     
 }
@@ -357,7 +358,7 @@ body {
 
 
 @media( max-width: 1090px) {
-    .logo-principal{
+    .logo-main{
         display:none;
     }
 
@@ -366,7 +367,7 @@ body {
         margin-left: 10px;
     }
 
-    .whatsapp-contato {
+    .whatsapp-contact {
         display:none;
         width: auto;
         display: flex;
@@ -399,6 +400,7 @@ body {
     #header-main{
         background-image: linear-gradient(to right, #070707 , #47454510 );
     }
+    
 
     #menu {
         display: block;
