@@ -2,9 +2,9 @@
 html{
   scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Open Sans', 'icones', sans-serif;
-
 }
 
 #header-main{
@@ -181,6 +181,7 @@ body {
     justify-content: center;
     padding-top: 110px;
     min-height: 100vh;
+		margin-bottom: 50px;
     
   }
 
@@ -357,6 +358,614 @@ body {
 
 
 
+#geral {
+	width: 997px;
+	height: 348px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	font-family: arial;
+	margin: 0 auto;
+	display: block;
+}
+#shadow {
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/shadow.jpg);
+	width: 999px;
+	height: 10px;
+	margin: 0 auto;
+}
+#calculo {
+	width: 997px;
+	height: 348px;
+	position: relative;
+}
+#resposta {
+	width: 997px;
+	height: 348px;
+	background-color: #fbfbfb;
+	position: relative;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	margin: 0 auto;
+	top: 0px;
+}
+.opa {
+	background-color: #fbfbfb;
+	width: 997px;
+	height: 348px;
+	margin-top: 0 auto;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	position: relative;
+	display: block;
+	top: -348px !important;
+}
+#calculo .titulo {
+	width: 997px;
+	height: 58px;
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/bg_title.jpg);
+	text-align: center;
+	color: #185473;
+	padding-top: 10px;
+	margin-bottom: 30px;
+	font-size: 22px;
+	font-weight: bold;
+}
+#resposta .titulo {
+	width: 997px;
+	height: 58px;
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/bg_title.jpg);
+	text-align: center;
+	color: #185473;
+	padding-top: 10px;
+	margin-bottom: 30px;
+	font-size: 22px;
+	font-weight: bold;
+}
+#resposta .titulo span {
+	font-style: italic;
+	font-weight: normal;
+}
+#calculo .conteudo {
+	width: 958px;
+	height: 217px;
+	margin: 0 auto;
+}
+#resposta .conteudo {
+	width: 958px;
+	height: 114px;
+	margin: 0 auto;
+}
+.box {
+	width: 304px;
+	height: 90px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: left;
+}
+.esq {
+	float: left;
+	width: 163px;
+	height: 90px;
+	border-right: 1px solid #ccc;
+}
+.desc {
+	font-size: 13px;
+	color: #666;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 16px;
+}
+.icon1 {
+	text-indent: -999px;
+	width: 14px;
+	height: 14px;
+	margin: 0 auto;
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/sprite_btus.png);
+	background-position: -286px -16px;
+	display: block;
+}
+.box .esq .icon1 span {
+	width: 120px;
+	height: 60px;
+	line-height: 15px;
+	padding: 10px;
+	left: 15px;
+	margin-left: 15px;
+	font-family: arial;
+	font-size: 11px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	background: #3B4A54;
+	text-indent: 0px;
+	position: absolute;
+	pointer-events: none;
+	bottom: 80px;
+	opacity: 0;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	transform: scale(0.2);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.box .esq .icon1:hover span {
+	opacity: 1;
+	bottom: 90px;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.dir {
+	float: right;
+	width: 138px;
+	height: 90px;
+}
+.iconsun {
+	width: 14px;
+	height: 14px;
+	display: block;
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/sprite_btus.png);
+	background-position: -15px -15px;
+	display: block;
+	text-indent: -999px;
+	margin: 0 auto;
+	top: 12px;
+	position: relative;
+}
+.conteudo select {
+	width: 120px;
+	height: 40px;
+	margin-left: 7px;
+	margin-top: 28px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+inset;
+	background: #fff;
+	color: #666;
+	outline: none;
+	display: inline-block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	appearance: none;
+	cursor: pointer;
+	background: transparent;
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/seta_select.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-left: 5px;
+	font-size: 25px;
+	font-family: arial;
+	font-weight: normal;
+}
+.box2 {
+	width: 304px;
+	height: 90px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: left;
+	margin-left: 20px;
+}
+.box2 .esq .icon1 span {
+	width: 120px;
+	height: 45px;
+	line-height: 15px;
+	padding: 10px;
+	left: 350px;
+	margin-left: 15px;
+	font-family: arial;
+	font-size: 12px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	background: #3B4A54;
+	text-indent: 0px;
+	position: absolute;
+	pointer-events: none;
+	bottom: 100px;
+	opacity: 0;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	transform: scale(0.2);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.box2 .esq .icon1:hover span {
+	opacity: 1;
+	bottom: 105px;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.iconarea {
+	width: 14px;
+	height: 14px;
+	display: block;
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/sprite_btus.png);
+	background-position: -60px -15px;
+	display: block;
+	text-indent: -999px;
+	margin: 0 auto;
+	top: 12px;
+	position: relative;
+}
+.conteudo input {
+	width: 70px;
+	height: 36px;
+	border: 1px solid #ccc;
+	margin-left: 33px;
+	margin-top: 27px;
+	font-family: arial;
+	color: #666;
+	font-size: 26px;
+	text-align: center;
+}
+.box3 {
+	width: 304px;
+	height: 90px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: left;
+	margin-left: 20px;
+}
+.box3 .esq .icon1 span {
+	width: 120px;
+	height: 45px;
+	line-height: 15px;
+	padding: 10px;
+	left: 680px;
+	margin-left: 15px;
+	font-family: arial;
+	font-size: 12px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	background: #3B4A54;
+	text-indent: 0px;
+	position: absolute;
+	pointer-events: none;
+	bottom: 80px;
+	opacity: 0;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	transform: scale(0.2);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.box3 .esq .icon1:hover span {
+	opacity: 1;
+	bottom: 105px;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.iconpeople {
+	width: 14px;
+	height: 14px;
+	display: block;
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/sprite_btus.png);
+	background-position: -106px -15px;
+	display: block;
+	text-indent: -999px;
+	margin: 0 auto;
+	top: 12px;
+	position: relative;
+}
+.box4 {
+	width: 304px;
+	height: 90px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: left;
+	margin-top: 20px;
+}
+.box4 .esq .icon1 span {
+	width: 120px;
+	height: 60px;
+	line-height: 15px;
+	padding: 10px;
+	left: 15px;
+	margin-left: 15px;
+	font-family: arial;
+	font-size: 12px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	background: #3B4A54;
+	text-indent: 0px;
+	position: absolute;
+	pointer-events: none;
+	bottom: 80px;
+	opacity: 0;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	transform: scale(0.2);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.box4 .esq .icon1:hover span {
+	opacity: 1;
+	bottom: 70px;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.iconeletro {
+	width: 18px;
+	height: 14px;
+	display: block;
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/sprite_btus.png);
+	background-position: -149px -15px;
+	display: block;
+	text-indent: -999px;
+	margin: 0 auto;
+	top: 12px;
+	position: relative;
+}
+.box5 {
+	width: 304px;
+	height: 90px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.box5 .esq .icon1 span {
+	width: 120px;
+	height: 40px;
+	line-height: 15px;
+	padding: 10px;
+	left: 350px;
+	margin-left: 15px;
+	font-family: arial;
+	font-size: 12px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	background: #3B4A54;
+	text-indent: 0px;
+	position: absolute;
+	pointer-events: none;
+	bottom: 80px;
+	opacity: 0;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	transform: scale(0.2);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.box5 .esq .icon1:hover span {
+	opacity: 1;
+	bottom: 70px;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.iconar {
+	width: 18px;
+	height: 14px;
+	display: block;
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/sprite_btus.png);
+	background-position: -194px -15px;
+	display: block;
+	text-indent: -999px;
+	margin: 0 auto;
+	top: 12px;
+	position: relative;
+}
+#botao a {
+	width: 304px;
+	height: 53px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	display: block;
+	font-family: 'georgia';
+	font-style: italic;
+	color: #fff;
+	background-color: #105474;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: normal;
+	padding-top: 38px;
+}
+#botao a:hover {
+	background-color: #39b54a;
+}
+#texto {
+	width: 958px;
+	color: red;
+	text-align: center;
+	float: left;
+	margin-top: 16px;
+}
+#total {
+	width: 630px;
+	height: 70px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 52px;
+	color: #105474;
+	padding-top: 13px;
+	font-weight: bold;
+	float: left;
+}
+.totaldois {
+	width: 400px !important;
+	height: 70px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 52px;
+	color: #105474;
+	padding-top: 13px;
+	font-weight: bold;
+	float: left;
+}
+#total span {
+	font-size: 22px;
+	font-style: italic;
+	font-weight: normal;
+}
+#opcao a {
+	width: 299px;
+	height: 35px;
+	font-family: 'georgia';
+	color: #fff;
+	font-style: italic;
+	background-color: #39b54a;
+	font-size: 18px;
+	border-radius: 5px;
+	float: right;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 10px;
+}
+#opcao a:hover {
+	background-color: #35a845
+}
+#opcao span {
+	width: 500px;
+	height: 45px;
+	font-family: 'arial';
+	color: #fff;
+	background-color: #999;
+	font-size: 12px;
+	border-radius: 5px;
+	float: right;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 5px;
+}
+#rodape a {
+	width: 299px;
+	height: 22px;
+	font-family: 'georgia';
+	color: #fff;
+	font-style: italic;
+	background-color: #105474;
+	font-size: 14px;
+	border-radius: 5px;
+	float: right;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 6px;
+	margin-top: 10px;
+}
+.rodapedois a {
+	width: 500px !important;
+	height: 22px;
+	font-family: 'georgia';
+	color: #fff;
+	font-style: italic;
+	background-color: #105474;
+	font-size: 14px;
+	border-radius: 5px;
+	float: right;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 6px;
+	margin-top: 10px;
+}
+#rodape a:hover {
+	background-color: #0d435d
+}
+.btu {
+	background-image: url(https://imagens.fastshop.com.br/imgbanner/shadow.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	float: left;
+	width: 997px;
+}
+.btu h1 {
+	text-align: center;
+	font-size: 22px;
+	color: #105474;
+	margin-top: 21px;
+	margin-bottom: -9px;
+}
+.btu h1 span {
+	font-style: italic;
+	font-weight: normal;
+}
+.btu p {
+	font-size: 18px;
+	color: #999;
+	text-align: center;
+	margin-top: 20px
+}
+.btu p span {
+	font-style: italic;
+}
+.btu .porem {
+	display: block;
+	float: right;
+	font-size: 10px;
+	color: #999;
+	margin-right: 10px;
+	margin-top: 18px;
+}
+
+
+
+
+
+
+
 @media( max-width: 1090px) {
     .logo-main{
         display:none;
@@ -506,5 +1115,13 @@ body {
         color: white;
       }
 
-      
+		
 }
+
+
+
+
+
+
+
+

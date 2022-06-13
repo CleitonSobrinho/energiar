@@ -14,8 +14,12 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
     
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
 
     
 </head>
@@ -114,6 +118,100 @@
        </section>
      </section>
 
+    
+
+     
+
+     <div id="geral">
+      <div id="calculo">
+        <div class="titulo"> Encontre o Ar Condicionado para o seu ambiente </div>
+        <div class="conteudo">
+          <form id="form" class="name" >
+            <div class="box">
+              <div class="esq"> <span class="desc">Qual o período de<br>
+                exposição ao sol?</span> <a href="#" class="icon1">? <span> Indique em qual momento do dia o sol atinge o ambiente com maior intensidade. </span></a> </div>
+              <div class="dir">
+                <label><span class="iconsun">Sol</span></label>
+                <select id="sol">
+                  <option value="1">Manhã</option>
+                  <option value="2">Tarde</option>
+                </select>
+              </div>
+            </div>
+            <div class="box2">
+              <div class="esq"> <span class="desc">Qual é a área total<br>
+                do ambiente em m²?</span> <a href="#" class="icon1">? <span> Largura = 2.5  X Comprimento = 2.5 = 6.25m Area total </span></a> </div>
+              <div class="dir">
+                <label><span class="iconarea">Area</span></label>
+                <input type="text" id="metro" size="10" onkeypress='return SomenteNumero(event)'  />
+              </div>
+            </div>
+            <div class="box3">
+              <div class="esq"> <span class="desc">Qual o número de<br>
+                pessoas no ambiente?</span> <a href="#" class="icon1">? <span> Indicar quantidade de pessoas que ocupam o ambiente.</span></a> </div>
+              <div class="dir">
+                <label><span class="iconpeople">Pessoas</span></label>
+                <input type="text" id="pessoas"  size="10" onkeypress='return SomenteNumero(event)' />
+              </div>
+            </div>
+            <div class="box4">
+              <div class="esq"> <span class="desc">Qual o número de <br>
+                aparelhos eletrônicos?</span> <a href="#" class="icon1">? <span> Ex: Desktop, televisores, blue-ray, home-theater, micro-system e etc… </span></a> </div>
+              <div class="dir">
+                <label><span class="iconeletro">Eletronicos</span></label>
+                <input type="text" id="equipamento" size="10" onkeypress='return SomenteNumero(event)' />
+              </div>
+            </div>
+            <div class="box5">
+              <div class="esq"> <span class="desc">Qual o número de <br>
+                entradas de ar?</span> <a href="#"  class="icon1">? <span> Quantidade de janelas e portas no ambiente. </span></a> </div>
+              <div class="dir">
+                <label><span class="iconar">Janelas/span></span></label>
+                <input type="text" id="abertura" size="10" onkeypress='return SomenteNumero(event)'/>
+              </div>
+            </div>
+            <div id="botao"> <a href="# #geral" onClick="calcular()" NAME="botão"><span>Calcular ›</span></a> <br />
+              <div id="texto"> </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="resposta">
+        <div class="titulo"> A quantidade de BTUs aproximada* para seu ambiente é de: </div>
+        <div class="conteudo">
+          <div id="total"> </div>
+          <div id="opcao"></div>
+          <div id="rodape"></div>
+        </div>
+        <div class="btu">
+          <h1>O que são BTUs?</h1>
+          <p>Unidade Térmica Britânica <span>(British Thermal Unit)</span>. <br>
+            Uma unidade de potência que mede a quantidade de energia necessária para elevar ou resfriar a temperatura.</p>
+          <span class="porem">* Alguns fatores adicionais podem interferir na quandidade de BTUs do cálculo.</span> </div>
+      </div>
+    </div>
+    <div id="shadow"></div>
+    <script>
+      
+       $('div#rodape').click(function() {
+                $(this).each(function(){
+                        $('div#resposta').removeClass("opa");
+                    });
+            });
+       $('div#rodape').click(function() {
+                $(this).each(function(){
+                        $('div#total').removeClass("totaldois");
+                    });
+            });
+       $('div#rodape').click(function() {
+                $(this).each(function(){
+                        $('div#rodape').removeClass("rodapedois");
+                    });
+            });
+    
+    
+       </script>
+
      <footer id="footer">
 
         <div id="menu-footer">
@@ -125,6 +223,7 @@
                 <li><a href="#footer">Contato</a> </li>
             </ul>
         </div>
+
         <div id="contact">
           <p>Entre em contato!</p>
         </div>
